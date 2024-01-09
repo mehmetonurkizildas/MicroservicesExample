@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "5737f35f-da4c-4e83-b999-ad7c408121dc",
+		"name": "Microservices",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3639756",
+		"_collection_link": "https://winter-trinity-957068.postman.co/workspace/Ticimax~78f14b07-b21e-4b11-a9f8-0f25a83b6f2a/collection/3639756-5737f35f-da4c-4e83-b999-ad7c408121dc?action=share&source=collection_link&creator=3639756"
+	},
+	"item": [
+		{
+			"name": "Get All Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5062/api/Product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5062",
+					"path": [
+						"api",
+						"Product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product ById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5062/api/Product/30674319-22A7-3DF2-2765-0AB9B9401126",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5062",
+					"path": [
+						"api",
+						"Product",
+						"30674319-22A7-3DF2-2765-0AB9B9401126"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Iphone 15 Pro\",\r\n    \"brand\": \"Apple\",\r\n    \"price\": 90,\r\n    \"description\": \"string\",\r\n    \"imageUrl\": \"string\",\r\n    \"stockStatus\": 1,\r\n    \"createdAt\": \"2024-01-09T13:41:47.853Z\",\r\n    \"updatedAt\": \"2024-01-09T13:41:47.853Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5062/api/Product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5062",
+					"path": [
+						"api",
+						"Product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5062/api/Product/354B305A-77A5-572A-E519-F41F893F7587",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5062",
+					"path": [
+						"api",
+						"Product",
+						"354B305A-77A5-572A-E519-F41F893F7587"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mongodb Search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5213/api/search?SearchTerm=Apple&PageNumber=1&PageSize=25&Brand=Apple&OrderBy=1&FilterBy=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5213",
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "SearchTerm",
+							"value": "Apple"
+						},
+						{
+							"key": "PageNumber",
+							"value": "1"
+						},
+						{
+							"key": "PageSize",
+							"value": "25"
+						},
+						{
+							"key": "Brand",
+							"value": "Apple"
+						},
+						{
+							"key": "OrderBy",
+							"value": "1"
+						},
+						{
+							"key": "FilterBy",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

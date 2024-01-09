@@ -1,0 +1,31 @@
+@ProductService_HostAddress = http://localhost:5062
+
+GET {{ProductService_HostAddress}}/api/product
+
+###
+
+POST {{ProductService_HostAddress}}/api/product
+Content-Type: application/json
+
+{
+  //CreateProductDto
+}
+
+###
+
+GET {{ProductService_HostAddress}}/api/product/{id}
+
+###
+
+DELETE {{ProductService_HostAddress}}/api/product/{id}
+
+###
+
+PUT {{ProductService_HostAddress}}/api/product/{id}
+Content-Type: application/json
+
+{
+  //Guid
+}
+
+###

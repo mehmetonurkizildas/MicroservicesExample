@@ -1,0 +1,5 @@
+@SearchService_HostAddress = http://localhost:5213
+
+GET {{SearchService_HostAddress}}/api/search
+
+###

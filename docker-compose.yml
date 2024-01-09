@@ -1,13 +1,13 @@
 version: '3.4'
 services:
-  # sqlserver:
-  #   image: 'mcr.microsoft.com/mssql/server:latest'
-  #   environment:
-  #     ACCEPT_EULA: 'Y'
-  #     SA_PASSWORD: 'Your_Password123'
-  #   ports:
-  #     - '1433:1433'
-  #   restart: always    
+  sqlserver:
+    image: 'mcr.microsoft.com/mssql/server:latest'
+    environment:
+      ACCEPT_EULA: 'Y'
+      SA_PASSWORD: 'Your_Password123'
+    ports:
+      - '1433:1433'
+    restart: always    
   mongodb_container:
     image: mongo:latest
     ports:
